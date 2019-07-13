@@ -1,16 +1,15 @@
-
 state={
-	id=153
-	name="STATE_153"
+	id=803
+	name="STATE_803"
 
 	history={
 		owner = AUS
 		victory_points = {
-			673 5 
+			688 10 
 		}
 		buildings = {
-			infrastructure = 5
-			industrial_complex = 1
+			infrastructure = 7
+			industrial_complex = 2
 			air_base = 3
 
 		}
@@ -25,9 +24,9 @@ state={
 	}
 
 	provinces={
-		673 6678 9633 9636 11618 11634 
+		668 688 3675 13224 
 	}
-	manpower=355520
+	manpower=254230
 	buildings_max_level_factor=1.000
 	state_category=town
 }
