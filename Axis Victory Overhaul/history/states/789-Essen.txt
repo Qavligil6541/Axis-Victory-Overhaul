@@ -1,0 +1,29 @@
+state={
+	id=789
+	name="STATE_789"
+
+	history={
+		owner = GER
+		victory_points = {
+			3512 10 
+		}
+		buildings = {
+			infrastructure = 8
+
+		}
+		add_core_of = GER
+		set_demilitarized_zone = yes
+		1936.3.7 = {
+			set_demilitarized_zone = no
+
+		}
+
+	}
+
+	provinces={
+		3444 3512 
+	}
+	manpower=1791500
+	buildings_max_level_factor=1.000
+	state_category=city
+}
