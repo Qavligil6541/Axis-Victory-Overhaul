@@ -1,11 +1,10 @@
-
 state={
-	id=184
-	name="STATE_184"
+	id=826
+	name="STATE_826"
 
 	history={
 		victory_points = {
-			11905 1 
+			10203 1 
 		}
 		owner = GRE
 		buildings = {
@@ -13,14 +12,13 @@ state={
 
 		}
 		add_core_of = GRE
-		add_claim_by = BUL
 
 	}
 
 	provinces={
-		11774 11905 13244 
+		1106 10203 
 	}
-	manpower=179630
+	manpower=103730
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 }

@@ -1,15 +1,12 @@
-
 state={
-	id=184
-	name="STATE_184"
+	id=825
+	name="STATE_825"
 
 	history={
-		victory_points = {
-			11905 1 
-		}
 		owner = GRE
 		buildings = {
 			infrastructure = 4
+			arms_factory = 1
 
 		}
 		add_core_of = GRE
@@ -18,9 +15,9 @@ state={
 	}
 
 	provinces={
-		11774 11905 13244 
+		966 3844 9837 
 	}
-	manpower=179630
+	manpower=263760
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 }

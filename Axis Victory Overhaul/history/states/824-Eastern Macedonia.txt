@@ -1,7 +1,9 @@
-
 state={
-	id=184
-	name="STATE_184"
+	id=824
+	name="STATE_824"
+	resources={
+		chromium=11.000
+	}
 
 	history={
 		victory_points = {
@@ -18,9 +20,9 @@ state={
 	}
 
 	provinces={
-		11774 11905 13244 
+		6990 9791 9930 
 	}
-	manpower=179630
+	manpower=200740
 	buildings_max_level_factor=1.000
 	state_category=rural
 }
