@@ -1,0 +1,23 @@
+
+state={
+	id=156
+	name="STATE_156"
+
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 5
+			dockyard = 1
+
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		3901 9990 10027 12066 12098 
+	}
+	manpower=1770000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

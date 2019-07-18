@@ -1,0 +1,24 @@
+state={
+	id=835
+	name="STATE_835"
+
+	history={
+		owner = ITA
+		victory_points = {
+			13218 1 
+		}
+		buildings = {
+			infrastructure = 7
+
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		13218 
+	}
+	manpower=21100
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

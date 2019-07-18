@@ -27,6 +27,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+give_guarantee = LIE
+
 set_stability = 0.50
 
 create_country_leader = {

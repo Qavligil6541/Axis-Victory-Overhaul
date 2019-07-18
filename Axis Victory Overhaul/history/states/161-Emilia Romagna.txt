@@ -26,9 +26,9 @@ state={
 	}
 
 	provinces={
-		782 3773 3976 6606 6790 6793 6985 9752 9924 11734 13218 
+		782 3773 3976 6606 6790 6793 6985 9752 9924 11734 
 	}
-	manpower=3202401
+	manpower=3181301
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }
