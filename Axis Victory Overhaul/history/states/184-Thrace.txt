@@ -5,7 +5,7 @@ state={
 
 	history={
 		victory_points = {
-			11905 1 
+			13244 3 
 		}
 		owner = GRE
 		buildings = {

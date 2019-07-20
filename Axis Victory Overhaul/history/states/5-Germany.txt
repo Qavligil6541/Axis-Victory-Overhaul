@@ -8,7 +8,7 @@ state={
 			6375 3 
 		}
 		victory_points = {
-			6332 10 
+			6332 20 
 		}
 		owner = GER
 		controller = GER

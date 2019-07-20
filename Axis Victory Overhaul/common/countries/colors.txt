@@ -539,3 +539,15 @@ LIE = {
 	color = rgb { 10 43 127 }
 	color_ui = rgb { 10 43 127 }
 }
+SMR = {
+	color = rgb { 94 182 228 }
+	color_ui = rgb { 94 182 228 }
+}
+VCT = {
+	color = rgb { 255 224 10 }
+	color_ui = rgb { 255 224 10 }
+}
+FCD = {
+	color = rgb { 198 55 55 }
+	color_ui = rgb { 198 55 55 }
+}

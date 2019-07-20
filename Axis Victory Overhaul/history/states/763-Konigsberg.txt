@@ -4,8 +4,8 @@ state={
 	name="STATE_763"
 
 	history={
-		owner = POL
-		controller = POL
+		owner = FCD
+		controller = FCD
 		victory_points = {
 			362 10
 		}
@@ -18,14 +18,8 @@ state={
 			}
 
 		}
+		add_core_of = FCD
 		add_core_of = POL
-		1939.1.1 = {
-			buildings = {
-				anti_air_building = 5
-
-			}
-
-		}
 
 	}
 
