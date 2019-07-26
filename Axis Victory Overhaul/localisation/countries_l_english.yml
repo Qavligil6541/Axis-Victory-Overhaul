@@ -617,8 +617,8 @@
  PAR_democratic_DEF:0 "the Republic of Paraguay"
  PAR_neutrality:0 "Republic of Paraguay"
  PAR_neutrality_DEF:0 "the Republic of Paraguay"
- PAR_communism:0 "Paraguay"
- PAR_communism_DEF:0 "Paraguay"
+ PAR_communism:0 "Republic of Paraguay"
+ PAR_communism_DEF:0 "the Republic of Paraguay"
  PAR_fascism_ADJ:0 "Paraguayan"
  PAR_democratic_ADJ:0 "Paraguayan"
  PAR_neutrality_ADJ:0 "Paraguayan"
@@ -2224,4 +2224,6 @@
  FCD_fascism:0 "Free City of Danzig"
  FCD_fascism_DEF:0 "the Free City of Danzig"
  FCD_fascism_ADJ:0 "Danziger"
- 
+ GGP_fascism:0 "Generalgouvernement"
+ GGP_fascism_DEF:0 "Generalgouvernement"
+ GGP_fascism_ADJ:0 "German"

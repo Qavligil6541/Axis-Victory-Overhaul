@@ -27,9 +27,9 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Pope Pius XII"
+	name = "Pope Pius XI"
 	desc = ""
-	picture = ""
+	picture = "gfx/leaders/VCT/portrait_vatican_pope_pius_xi.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -38,9 +38,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Pope Pius XII"
+	name = "Pope Pius XI"
 	desc = ""
-	picture = ""
+	picture = "gfx/leaders/VCT/portrait_vatican_pope_pius_xi.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
