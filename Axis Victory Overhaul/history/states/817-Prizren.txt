@@ -1,3 +1,4 @@
+
 state={
 	id=817
 	name="STATE_817"
@@ -13,14 +14,14 @@ state={
 		}
 		add_core_of = YUG
 		add_core_of = MAC
-                add_core_of = SER
+		add_core_of = SER
 
 	}
 
 	provinces={
-		833 867 9849 9874 13219 
+		9849 9874 13219 
 	}
-	manpower=462590
+	manpower=400000
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

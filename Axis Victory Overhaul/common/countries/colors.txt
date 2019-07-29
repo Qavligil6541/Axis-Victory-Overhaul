@@ -555,3 +555,11 @@ GGP = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
 }
+MCO = {
+	color = rgb { 243 108 122 }
+	color_ui = rgb { 243 108 122 }
+}
+ADR = {
+	color = rgb { 246 168 116 }
+	color_ui = rgb { 246 168 116 }
+}
