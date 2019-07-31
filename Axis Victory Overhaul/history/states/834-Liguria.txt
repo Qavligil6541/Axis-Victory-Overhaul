@@ -1,0 +1,36 @@
+state={
+	id=834
+	name="STATE_834"
+	resources={
+		chromium=2.000
+		tungsten=1.000
+	}
+
+	history={
+		owner = ITA
+		victory_points = {
+			6788 20 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 1
+			dockyard = 2
+			air_base = 3
+			6788 = {
+				naval_base = 8
+
+			}
+
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		3772 6788 11891 
+	}
+	manpower=1460000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

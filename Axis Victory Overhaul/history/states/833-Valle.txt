@@ -1,0 +1,21 @@
+state={
+	id=833
+	name="STATE_833"
+
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		611 3782 11570 
+	}
+	manpower=83700
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
