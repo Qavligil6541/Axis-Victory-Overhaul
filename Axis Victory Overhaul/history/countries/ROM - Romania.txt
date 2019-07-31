@@ -55,14 +55,13 @@ if = {
 	}
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
-                neutrality_idea
-                selective_education
 	}
 	give_guarantee = CZE
 	give_guarantee = GRE
 	give_guarantee = TUR
 }
 add_ideas = neutrality_idea
+add_ideas = ROM_selective_education
 
 #Kick off kings crazy life
 if = {
@@ -226,21 +225,6 @@ set_popularities = {
 	neutrality = 60
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1939.7.15"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		democratic = 20
-		fascism = 35
-		communism = 2
-		neutrality = 43
-	}
-}
-
 create_country_leader = {
 	name = "Gheorghe Tatarescu"
 	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
@@ -275,35 +259,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Octavian Goga"
-	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
-	picture = "Portrait_Romania_Octavian_Goga.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-create_country_leader = {
 	name = "Corneliu Zelea Codreanu"
-	desc = "POLITICS_ION_ANTONESCU_DESC"
-	picture = "Corneliu_Zel.dds"
-	expire = "1939.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-
-create_country_leader = {
-	name = "Ion Antonescu"
-	desc = "POLITICS_ION_ANTONESCU_DESC"
-	picture = "Portrait_Romania_Ion_Antonescu.dds"
+	desc = "POLITICS_CODREANU_DESC"
+	picture = "gfx/leaders/ROM/Portrait_Romania_Corneliu_Codreanu.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
 		#
 	}
-
 }
 
 create_field_marshal = {

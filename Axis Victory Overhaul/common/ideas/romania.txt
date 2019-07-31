@@ -1,24 +1,6 @@
 ideas = {
 
 	country = {
-	    selective_education = {
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				research_bonus = 0.1
-				construction_speed = -0.1
-			}
-		}
-
 		ROM_revenge_against_soviet = {
 
 			picture = anti_soviet_pact
@@ -38,6 +20,26 @@ ideas = {
 			modifier = {
 				fascism_drift = 0.1
 				fascism_acceptance = 100
+			}
+		}
+
+                ROM_selective_education = {
+
+                        picture = generic_oppression
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
 			}
 		}
 	
