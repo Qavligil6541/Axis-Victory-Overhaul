@@ -77,7 +77,7 @@ bookmarks = {
 			focuses = {
 				GER_anschluss
 				GER_danzig_or_war
-				GER_revive_the_kaiserreich
+				GER_ussr_war_goal
 			}
 		}
 		"GER"={
