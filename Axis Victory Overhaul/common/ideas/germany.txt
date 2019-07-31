@@ -39,6 +39,79 @@ ideas = {
 			}
 		}
 
+		german_economic_boom = {
+
+			allowed = {
+				original_tag = GER
+			}
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		GER_allgemeine_1 = {
+			removal_cost = -1
+			allowed = {always = no}
+			allowed_civil_war = { always = yes }
+			picture = generic_secret_police
+			modifier = {
+				enemy_partisan_effect = -0.02
+				foreign_subversive_activites = -0.02
+				subversive_activites_upkeep = -0.02
+			}
+		}
+
+		GER_allgemeine_2 = {
+			removal_cost = -1
+			allowed = {always = no}
+			allowed_civil_war = { always = yes }
+			picture = generic_secret_police
+			modifier = {
+				enemy_partisan_effect = -0.05
+				drift_defence_factor = 0.05
+				foreign_subversive_activites = -0.05
+				subversive_activites_upkeep = -0.05
+			}
+		}
+
+		GER_allgemeine_3 = {
+			removal_cost = -1
+			allowed = {always = no}
+			allowed_civil_war = { always = yes }
+			picture = generic_secret_police
+			modifier = {
+				enemy_partisan_effect = -0.08
+				decryption_factor = 0.08
+				encryption_factor = 0.08
+				fascism_drift = 0.08
+				drift_defence_factor = 0.08
+				foreign_subversive_activites = -0.08
+				subversive_activites_upkeep = -0.08
+			}
+		}
+
+		GER_SS_youth = {
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+
+			}			
+
+			modifier = {
+				conscription = 0.01
+			}
+		}
+
 		triumphant_will = {
 			
 			allowed = {

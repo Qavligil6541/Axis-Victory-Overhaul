@@ -16,7 +16,10 @@ focus_tree = {
     focus = {
 		id = GER_depression
 		icon = GFX_focus_generic_industry_2
-		x = 5
+		available = {
+			has_government = fascism
+		}
+		x = 6
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -32,7 +35,7 @@ focus_tree = {
 		id = GER_begin_military
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = GER_depression }
-		x = 5
+		x = 6
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -50,7 +53,7 @@ focus_tree = {
 		id = GER_four_year_plan
 		prerequisite = { focus = GER_increase_spending }
 		icon = GFX_goal_generic_construction
-		x = 4
+		x = 5
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -71,7 +74,7 @@ focus_tree = {
 		id = GER_increase_spending
 		prerequisite = { focus = GER_autarky }
 		icon = GFX_focus_chi_army_reform
-		x = 3
+		x = 4
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -79,7 +82,13 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			army_experience = 10
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	
@@ -87,7 +96,7 @@ focus_tree = {
 		id = GER_decrease_spending
 		prerequisite = { focus = GER_technocracy }
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 7
+		x = 8
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -95,7 +104,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			army_experience = -25
 		}
 	}
 	
@@ -103,7 +112,7 @@ focus_tree = {
 		id = GER_grosraumwirtschaft
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = GER_integrate_war_economies focus = GER_german_war_economy }
-		x = 5
+		x = 6
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -119,7 +128,7 @@ focus_tree = {
 		id = GER_coal_liquidization
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = GER_labor }
-		x = 10
+		x = 11
 		y = 8
 		cost = 10
 		ai_will_do = {
@@ -184,7 +193,7 @@ focus_tree = {
 		id = GER_steel_factories
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = GER_hermann_goring_werke }
-		x = 0
+		x = 1
 		y = 8
 		cost = 10
 		ai_will_do = {
@@ -215,7 +224,7 @@ focus_tree = {
 		id = GER_tungsten_mines
 		icon = GFX_focus_generic_tungsten
 		prerequisite = { focus = GER_steel_factories }
-		x = 0
+		x = 1
 		y = 9
 		cost = 10
 		ai_will_do = {
@@ -247,7 +256,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = GER_begin_military }
 		mutually_exclusive = { focus = GER_integrate_war_economies }
-		x = 6
+		x = 7
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -334,7 +343,7 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = GER_begin_military }
 		mutually_exclusive = { focus = GER_german_war_economy }
-		x = 4
+		x = 5
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -401,7 +410,7 @@ focus_tree = {
 		id = GER_autobahn
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = GER_grosraumwirtschaft }
-		x = 1
+		x = 2
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -470,7 +479,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		dynamic = yes
 		prerequisite = { focus = GER_autobahn }
-		x = 1
+		x = 2
 		y = 5
 		cost = 5
 		ai_will_do = {
@@ -548,7 +557,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = GER_grosraumwirtschaft }
 		mutually_exclusive = { focus = GER_technocracy }
-		x = 3
+		x = 4
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -575,7 +584,7 @@ focus_tree = {
 		icon = GFX_goal_continuous_research
 		prerequisite = { focus = GER_grosraumwirtschaft }
 		mutually_exclusive = { focus = GER_autarky }
-		x = 7
+		x = 8
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -592,7 +601,7 @@ focus_tree = {
 		icon = GFX_focus_research
 		text = extra_tech_slot
 		prerequisite = { focus = GER_grosraumwirtschaft }
-		x = 5
+		x = 6
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -611,7 +620,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		dynamic = yes
 		prerequisite = { focus = GER_increase_spending }
-		x = 2
+		x = 3
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -688,7 +697,7 @@ focus_tree = {
 		id = GER_west_wall
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = GER_grosraumwirtschaft }
-		x = 9
+		x = 10
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -791,7 +800,7 @@ focus_tree = {
 				NOT = { country_exists = HOL }
 			}
 		}
-		x = 9
+		x = 10
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -1004,7 +1013,7 @@ focus_tree = {
 		id = GER_industrial_expansion
 		icon = GFX_focus_generic_industry_1
 		prerequisite = { focus = GER_four_year_plan }
-		x = 4
+		x = 5
 		y = 8
 		cost = 10
 		ai_will_do = {
@@ -1071,7 +1080,7 @@ focus_tree = {
 		id = GER_air_expansion
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = GER_industrial_expansion }
-		x = 4
+		x = 5
 		y = 9
 		cost = 10
 		ai_will_do = {
@@ -1123,7 +1132,7 @@ focus_tree = {
 		id = GER_military_rearmament
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = GER_hermann_goring_werke focus = GER_four_year_plan }
-		x = 2
+		x = 3
 		y = 8
 		cost = 10
 		ai_will_do = {
@@ -1190,7 +1199,7 @@ focus_tree = {
 		id = GER_naval_expansion
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = GER_military_rearmament }
-		x = 2
+		x = 3
 		y = 9
 		cost = 10
 		ai_will_do = {
@@ -1242,7 +1251,7 @@ focus_tree = {
 		id = GER_agrarian_focus
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = GER_decrease_spending }
-		x = 6
+		x = 7
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -1258,7 +1267,7 @@ focus_tree = {
 		id = GER_labor
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = GER_decrease_spending }
-		x = 8
+		x = 9
 		y = 7
 		cost = 10
 		ai_will_do = {
@@ -1274,7 +1283,7 @@ focus_tree = {
 		id = GER_political_maneuver
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = GER_resource_exploitation }
-		x = 8
+		x = 9
 		y = 9
 		cost = 10
 		ai_will_do = {
@@ -1289,8 +1298,8 @@ focus_tree = {
 	focus = {
 		id = GER_resource_exploitation
 		icon = GFX_focus_generic_aluminum
-		prerequisite = { focus = GER_agrarian_focus focus = GER_agrarian_focus }
-		x = 8
+		prerequisite = { focus = GER_agrarian_focus focus = GER_labor }
+		x = 9
 		y = 8
 		cost = 10
 		ai_will_do = {
@@ -1306,7 +1315,7 @@ focus_tree = {
 		id = GER_autobahn_expansion
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = GER_agrarian_focus }
-		x = 6
+		x = 7
 		y = 8
 		cost = 10
 		ai_will_do = {
@@ -1365,7 +1374,7 @@ focus_tree = {
 		icon = GFX_focus_research
 		text = extra_tech_slot
 		prerequisite = { focus = GER_autobahn_expansion }
-		x = 6
+		x = 7
 		y = 9
 		cost = 10
 		ai_will_do = {
@@ -1383,7 +1392,7 @@ focus_tree = {
 		id = GER_sweden_trade
 		icon = GFX_focus_generic_tungsten
 		prerequisite = { focus = GER_autarky focus = GER_technocracy }
-		x = 5
+		x = 6
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -1395,6 +1404,439 @@ focus_tree = {
 		completion_reward = {
 			add_opinion_modifier = { target = SWE modifier = ROM_trade_treaty_with_germany }
 			SWE = { add_opinion_modifier = { target = ROOT modifier = ROM_trade_treaty_with_germany } }
+		}
+	}
+	
+	focus = {
+		id = GER_extra_tech_slot_3
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = GER_tungsten_mines }
+		prerequisite = { focus = GER_naval_expansion }
+		prerequisite = { focus = GER_air_expansion }
+		x = 3
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = GER_further_economy
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = GER_extra_tech_slot_2 }
+		prerequisite = { focus = GER_political_maneuver }
+		prerequisite = { focus = GER_synthetic_rubber }
+		x = 9
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_economic_boom
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = GER_extra_tech_slot_3 focus = GER_further_economy }
+		x = 6
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = german_economic_boom
+				days = 365
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_rocketry_focus
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = GER_grosraumwirtschaft }
+		x = 12
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = GER_rocketry_idea
+			add_tech_bonus = {
+				name = GER_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = GER_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = jet_technology
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_wunderwaffe
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = GER_rocketry_focus }
+		x = 12
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+				category = rocketry
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_radar_tech
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = GER_grosraumwirtschaft }
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = radar_tech
+				bonus = 1.0
+				uses = 1
+				category = radar_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_computer_tech
+		icon = GFX_focus_generic_cryptologic_bomb
+		prerequisite = { focus = GER_radar_tech }
+		x = 0
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = computing_tech
+				bonus = 1.0
+				uses = 1
+				category = computing_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_expand_ss
+		icon = GFX_focus_ger_reichskommisariats
+		available = {
+			has_government = fascism
+		}
+		x = 17
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    army_experience = 5
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = GER_allgemeine_ss
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = GER_expand_ss }
+		x = 15
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    add_ideas = GER_allgemeine_1
+		}
+	}
+	
+	focus = {
+		id = GER_ss_influence
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = GER_allgemeine_ss }
+		x = 15
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    swap_ideas = { remove_idea = GER_allgemeine_1 add_idea = GER_allgemeine_2 }
+		}
+	}
+	
+	focus = {
+		id = GER_ss_propaganda
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = GER_ss_influence }
+		x = 15
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    add_stability = 0.1
+			add_political_power = 75
+		}
+	}
+	
+	focus = {
+		id = GER_ss_final
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = GER_ss_propaganda }
+		x = 15
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    swap_ideas = { remove_idea = GER_allgemeine_2 add_idea = GER_allgemeine_3 }
+		}
+	}
+	
+	focus = {
+		id = GER_waffen_ss
+		icon = GFX_goal_rhineland
+		prerequisite = { focus = GER_expand_ss }
+		x = 17
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    custom_effect_tooltip = GER_waffen_text
+		    division_template = {
+						name = "Waffen-SS"
+						priority = 3
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+				
+		    	   		 	infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+				
+		    	   		 	infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							
+							infantry = { x = 3 y = 0 }
+							infantry = { x = 3 y = 1 }
+							infantry = { x = 3 y = 2 }
+							
+							infantry = { x = 4 y = 0 }
+							infantry = { x = 4 y = 1 }
+							infantry = { x = 4 y = 2 }
+							artillery_brigade = { x = 2 y = 1 }
+							artillery_brigade = { x = 2 y = 2 }
+							artillery_brigade = { x = 2 y = 3 }
+							artillery_brigade = { x = 2 y = 4 }
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+						}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_himmler_command
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = GER_waffen_ss }
+		x = 17
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		
+		completion_reward = {
+		    create_field_marshal = { 
+					name = "Heinrich Himmler"
+					portrait_path = gfx/leaders/GER/Portrait_Germany_Heinrich_Himmler.dds
+					traits = { infantry_officer }
+					traits = { offensive_doctrine }
+					skill = 2
+					attack_skill = 3
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 2
+				}
+		}
+	}
+	
+	focus = {
+		id = GER_ss_youth
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = GER_himmler_command }
+		x = 17
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		      add_stability = -0.01
+			  add_ideas = GER_SS_youth
+		}
+	}
+	
+	focus = {
+		id = GER_ss_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = GER_ss_youth }
+		x = 17
+		y = 4
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_form_the_reichskommissariats
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_expand_ss }
+		available = {
+			has_government = fascism
+		}
+		x = 19
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = GER_reichskommissariats_tt
+			unlock_decision_tooltip = GER_reichskommissariat_norwegen
+			unlock_decision_tooltip = GER_reichskommissariat_niederlande
+			unlock_decision_tooltip = GER_reichskommissariat_belgien_nordfrankreich
+			unlock_decision_tooltip = GER_reichskommissariat_ostland
+			unlock_decision_tooltip = GER_reichskommissariat_ukraine
+		}
+	}
+	
+	focus = {
+		id = GER_german_rule
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = GER_form_the_reichskommissariats }
+		mutually_exclusive = { focus = GER_local_rule }
+		available = {
+			has_government = fascism
+		}
+		x = 19
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_local_rule
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = GER_form_the_reichskommissariats }
+		mutually_exclusive = { focus = GER_german_rule }
+		available = {
+			has_government = fascism
+		}
+		x = 21
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
 		}
 	}
 	
