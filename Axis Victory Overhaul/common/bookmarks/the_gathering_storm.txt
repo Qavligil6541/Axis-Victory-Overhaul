@@ -135,7 +135,23 @@ bookmarks = {
 				SOV_war_with_uk
 			}	
 		}
-
+		
+               ""ROM"={
+			minor = yes
+			history = "ROM_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ROM_king_carol_ii_hedonist
+				neutrality_idea
+                                selective_education
+			}
+			focuses = {
+				ROM_balkans_dominance
+				ROM_institute_royal_dictatorship
+				ROM_preserve_greater_romania
+					}	
+		}
+				
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
@@ -146,6 +162,7 @@ bookmarks = {
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
+			
 		}
 	}
 }
