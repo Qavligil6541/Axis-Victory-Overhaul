@@ -81,8 +81,6 @@ if = {
 	add_ideas = MTG_naval_treaty_adherent
 }
 
-give_guarantee = MCO
-give_guarantee = ADR
 
 set_convoys = 300
 

@@ -1,4 +1,4 @@
-﻿capital = 806
+﻿capital = 861
 
 oob = "AUS_1936"
 
@@ -27,7 +27,6 @@ set_politics = {
 	elections_allowed = no
 }
 
-give_guarantee = LIE
 
 set_stability = 0.50
 

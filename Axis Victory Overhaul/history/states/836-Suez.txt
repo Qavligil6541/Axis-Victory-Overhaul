@@ -1,0 +1,23 @@
+state={
+	id=836
+	name="STATE_836"
+
+	history={
+		owner = ENG
+		victory_points = {
+			13255 5
+		}
+		buildings = {
+			infrastructure = 7
+
+		}
+		add_core_of = EGY
+
+	}
+	provinces={
+		13218 13236 13255 
+	}
+	manpower=37150
+	buildings_max_level_factor=1.000
+	state_category=city
+}

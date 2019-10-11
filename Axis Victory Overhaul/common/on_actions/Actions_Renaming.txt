@@ -26,18 +26,12 @@ on_actions = {
 			            country_event = { id = rename.9800 }
 			            country_event = { id = rename.9801 }
             } 
-            # Katowice
+            # Malopolska
             if = {
 	            limit = { FROM.FROM = { state = 762 } }
 			            country_event = { id = rename.76200 }
 			            country_event = { id = rename.76201 }
             } 	
-            # Malopolska
-            if = {
-	            limit = { FROM.FROM = { state = 784 } }
-			            country_event = { id = rename.78400 }
-			            country_event = { id = rename.78401 }
-            } 
 			# Klaipeda
             if = {
 	            limit = { FROM.FROM = { state = 188 } }

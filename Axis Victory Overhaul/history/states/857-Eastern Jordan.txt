@@ -1,0 +1,21 @@
+state={
+	id=857
+	name="STATE_857"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = JOR
+
+	}
+
+	provinces={
+		1544 4562 4603 11976 
+	}
+	manpower=2000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

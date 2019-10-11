@@ -1,0 +1,24 @@
+state={
+	id=790
+	name="STATE_790"
+
+	history={
+		owner = DEN
+		buildings = {
+			infrastructure = 4
+			6361 = {
+				naval_base = 1
+			}
+
+		}
+		add_core_of = DEN
+
+	}
+
+	provinces={
+		6361 
+	}
+	manpower=41350
+	buildings_max_level_factor=1.000
+	state_category=town
+}

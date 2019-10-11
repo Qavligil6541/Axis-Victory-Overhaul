@@ -75,9 +75,6 @@ bookmarks = {
 				GER_mefo_bills_1
 			}
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_revive_the_kaiserreich
 			}
 		}
 		"GER"={
@@ -88,11 +85,8 @@ bookmarks = {
 				sour_loser
 				general_staff
 				GER_mefo_bills_1
-			}
+                        }
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
 			}
 		}
 		"ITA"={
@@ -177,6 +171,7 @@ bookmarks = {
 			history = "BUL_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				neutrality_idea
 			}
 			focuses = {
 			}

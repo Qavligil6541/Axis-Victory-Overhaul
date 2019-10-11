@@ -1,0 +1,29 @@
+state={
+	id=835
+	name="STATE_835"
+
+	history={
+		owner = SPR
+		victory_points = {
+			13226 1 
+		}
+		buildings = {
+			infrastructure = 5
+			13226 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = SPR
+		add_core_of = MOR
+
+	}
+
+	provinces={
+		13226
+	}
+	manpower=121100
+	buildings_max_level_factor=1.000
+	state_category=town
+}

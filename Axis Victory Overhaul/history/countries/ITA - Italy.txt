@@ -97,8 +97,7 @@ if = {
 		type = annex_everything
 	}
 	give_guarantee = ALB
-	give_guarantee = SMR
-	give_guarantee = VCT
+
 }
 
 

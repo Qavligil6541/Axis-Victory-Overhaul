@@ -39,8 +39,7 @@ ideas = {
 			
 			modifier = {
 				research_speed_factor = 0.1
-				production_speed_rocket_site_factor = -0.1
-				production_speed_radar_station_factor = -0.1
+				production_speed_industrial_complex_factor = -0.1
 			}
 		}
 	
