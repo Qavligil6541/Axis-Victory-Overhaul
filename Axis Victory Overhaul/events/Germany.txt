@@ -39,6 +39,43 @@ country_event = {
 				add_core_of = GER
 			}
 		}
+		805 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		807 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		861 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		803 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		804 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+		801 = {
+			if = {
+				limit = { is_owned_by = AUS }
+				add_core_of = GER
+			}
+		}
+
 		AUS = {
 			every_unit_leader = {
 				set_nationality = GER
@@ -1808,6 +1845,8 @@ country_event = {
 		GER = { transfer_state = 69 }
 		74 = { add_core_of = GER }
 		GER = { transfer_state = 74 }
+		808 = { add_core_of = GER }
+		GER = { transfer_state = 808 }
 		set_country_flag = sudetenland_acquired
 		add_war_support = 0.1
 		add_stability = 0.05
@@ -2100,6 +2139,41 @@ country_event = {
 		ai_chance = { factor = 80 }
 		if = {
 			limit = {
+				9 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+			}
+			PBM = { transfer_state = 9 }
+		}
+		if = {
+			limit = {
+				75 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+			}
+			PBM = { transfer_state = 75 }
+		}
+		if = {
+			limit = {
+				855 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+			}
+			PBM = { transfer_state = 855 }
+		}
+                855 = { set_demilitarized_zone = yes }
+                puppet = PBM
+		if = {
+			limit = {
 				70 = {
 					OR = {
 						is_owned_by = CZE
@@ -2174,6 +2248,7 @@ country_event = {
 			add_war_support = 0.1
 		}
 		puppet = SLO
+                set_autonomy = { target = SLO autonomy_state = autonomy_satellite }
 		if = {
 			limit = {
 				72 = {

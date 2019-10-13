@@ -1240,6 +1240,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = GER
+			tag = PBM
 			is_subject_of = GER
 		}
 		9 = {
@@ -1302,6 +1303,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = GER
+			tag = PBM
 			is_subject_of = GER
 		}
 		75 = {

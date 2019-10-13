@@ -1,0 +1,35 @@
+﻿capital = 9
+
+#oob = ""
+
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	basic_light_tank = 1
+}
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 100
+	communism = 0
+	neutrality = 0
+}
+
+create_country_leader = {
+	name = "Reinhard Heydrich"
+	desc = ""
+	picture = "gfx/leaders/PBM/Portrait_Bohmen_Heydrich.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
