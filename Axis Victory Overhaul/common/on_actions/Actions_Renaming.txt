@@ -115,8 +115,6 @@ on_actions = {
 	            limit = { FROM.FROM = { state = 72 } }
 			            country_event = { id = rename.7200 }
 			            country_event = { id = rename.7201 }
-						country_event = { id = rename.7202 }
-						country_event = { id = rename.7203 }
             }
 			# Cechy
             if = {
@@ -129,6 +127,30 @@ on_actions = {
 	            limit = { FROM.FROM = { state = 75 } }
 			            country_event = { id = rename.7500 }
 			            country_event = { id = rename.7501 }
+            }
+			# Wilno
+            if = {
+	            limit = { FROM.FROM = { state = 784 } }
+			            country_event = { id = rename.78400 }
+			            country_event = { id = rename.78401 }
+            }
+			# Druskininkai
+            if = {
+	            limit = { FROM.FROM = { state = 864 } }
+			            country_event = { id = rename.86400 }
+			            country_event = { id = rename.86401 }
+            }
+			# Wolyn
+            if = {
+	            limit = { FROM.FROM = { state = 93 } }
+			            country_event = { id = rename.9300 }
+			            country_event = { id = rename.9301 }
+            }
+			# Polesie
+            if = {
+	            limit = { FROM.FROM = { state = 94 } }
+			            country_event = { id = rename.9400 }
+			            country_event = { id = rename.9401 }
             }
       }
 }

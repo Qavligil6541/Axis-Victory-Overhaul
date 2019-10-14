@@ -1142,62 +1142,6 @@ country_event = {
 	}
 }
 
-# Czech - rename Zaolsi
-country_event = {
-	id = rename.7202
-	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7200"}
-
-	is_triggered_only = yes
-	hidden = yes
-
-	trigger = {
-		OR = {
-			tag = CZE
-		}
-		72 = {
-			is_controlled_by = ROOT
-			has_state_flag = renamed_state_polish
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			72 = {
-				reset_state_name = yes
-				clr_state_flag = renamed_state_polish
-			}
-		}
-	}
-}
-
-# Polish - rename Zaolsi
-country_event = {
-	id = rename.7203
-	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.7201"}
-
-	is_triggered_only = yes
-	hidden = yes
-
-	trigger = {
-		OR = {
-			tag = POL
-		}
-		72 = {
-			is_controlled_by = ROOT
-			NOT = { has_state_flag = renamed_state_polish }
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			72 = {
-				set_state_name = "Zaolzie"
-				set_state_flag = renamed_state_polish
-			}
-		}
-	}
-}
-
 # Czech - rename Cechy
 country_event = {
 	id = rename.900
@@ -1320,6 +1264,242 @@ country_event = {
 			}
 			set_province_name = { id = 3569 name = "Brünn"}
 			set_province_name = { id = 6562 name = "Olmütz"}
+		}
+	}
+}
+
+# Polish - rename Wilno
+country_event = {
+	id = rename.78400
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.78400"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = POL
+		}
+		784 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			784 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 3320
+		}
+	}
+}
+
+# German - rename Wilno
+country_event = {
+	id = rename.78401
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.78401"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			is_subject_of = GER
+		}
+		784 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			784 = {
+				set_state_name = "Wilna"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 3320 name = "Wilna"}
+		}
+	}
+}
+
+# Polish - rename Druskininkai
+country_event = {
+	id = rename.86400
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.86400"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = POL
+		}
+		864 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			864 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# German - rename Druskininkai
+country_event = {
+	id = rename.86401
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.86401"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			is_subject_of = GER
+		}
+		864 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			864 = {
+				set_state_name = "Druscheniken"
+				set_state_flag = renamed_state_german
+			}
+		}
+	}
+}
+
+# Polish - rename Wolyn
+country_event = {
+	id = rename.9300
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.9300"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = POL
+		}
+		93 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			93 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 6557
+		}
+	}
+}
+
+# German - rename Wolyn
+country_event = {
+	id = rename.9301
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.9301"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			is_subject_of = GER
+		}
+		93 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			93 = {
+				set_state_name = "Wolhynien"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 6557 name = "Rowno"}
+		}
+	}
+}
+
+# Polish - rename Polesie
+country_event = {
+	id = rename.9400
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.9400"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = POL
+		}
+		94 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			94 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 3392
+			reset_province_name = 560
+		}
+	}
+}
+
+# German - rename Polesie
+country_event = {
+	id = rename.9401
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.9401"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			is_subject_of = GER
+		}
+		94 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			94 = {
+				set_state_name = "Weißruthenien"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 3392 name = "Brest"}
+			set_province_name = { id = 560 name = "Pinsk"}
 		}
 	}
 }
