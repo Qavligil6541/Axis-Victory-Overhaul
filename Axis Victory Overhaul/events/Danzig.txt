@@ -1,0 +1,36 @@
+﻿###########################
+# Danzig Events
+###########################
+
+add_namespace = danzig
+
+country_event = {
+	id = danzig.1
+	title = danzig.1.t
+	desc = danzig.1.d
+	picture = GFX_report_event_german_speech
+
+	fire_only_once = yes
+
+        trigger = {
+           tag = FCD
+           GER = { has_war_with = POL}
+        }
+ 
+        option = {
+              name = danzig.1.a
+	      ai_chance = { factor = 70 }
+              GER = {
+                 transfer_state = 763
+              }
+        }
+
+        option = {
+              name = danzig.1.b
+	      ai_chance = { factor = 30 }
+              POL = {
+                 transfer_state = 763
+              }
+        }
+}
+

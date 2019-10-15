@@ -532,6 +532,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = GER
+			tag = GGP
 			is_subject_of = GER
 		}
 		10 = {
@@ -593,6 +594,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = GER
+			tag = GGP
 			is_subject_of = GER
 		}
 		90 = {
@@ -654,6 +656,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = GER
+			tag = GGP
 			is_subject_of = GER
 		}
 		88 = {
@@ -715,6 +718,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = GER
+			tag = GGP
 			is_subject_of = GER
 		}
 		91 = {
@@ -775,6 +779,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = GER
+			tag = GGP
 			is_subject_of = GER
 		}
 		89 = {
@@ -1500,6 +1505,255 @@ country_event = {
 			}
 			set_province_name = { id = 3392 name = "Brest"}
 			set_province_name = { id = 560 name = "Pinsk"}
+		}
+	}
+}
+
+# French - rename Alsace-Lorraine
+country_event = {
+	id = rename.2800
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.2800"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+		}
+		28 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			28 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 678
+			reset_province_name = 9503
+		}
+	}
+}
+
+# German - rename Alsace-Lorraine
+country_event = {
+	id = rename.2801
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.2801"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			is_subject_of = GER
+		}
+		28 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			28 = {
+				set_state_name = "Elsaß-Lothringen"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 678 name = "Mülhausen"}
+			set_province_name = { id = 9503 name = "Straßburg"}
+		}
+	}
+}
+
+# Belgian - rename Wallonie
+country_event = {
+	id = rename.3400
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.3400"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = BEL
+		}
+		34 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			34 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 3516
+			reset_province_name = 11519
+		}
+	}
+}
+
+# German - rename Wallonie
+country_event = {
+	id = rename.3401
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.3401"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = RKB
+			is_subject_of = GER
+		}
+		34 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			34 = {
+				set_state_name = "Wallonien"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 3516 name = "Namen"}
+			set_province_name = { id = 11519 name = "Lüttich"}
+		}
+	}
+}
+
+# French - rename Calais
+country_event = {
+	id = rename.2900
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.2900"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+		}
+		29 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			29 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 575
+			reset_province_name = 11548
+		}
+	}
+}
+
+# German - rename Calais
+country_event = {
+	id = rename.2901
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.2901"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = RKB
+			is_subject_of = GER
+		}
+		29 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			29 = {
+				set_state_name = "Kalen"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 575 name = "Dünkirchen"}
+			set_province_name = { id = 11548 name = "Kalen"}
+		}
+	}
+}
+
+# Belgian - rename Vlaanderen
+country_event = {
+	id = rename.600
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.600"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = FRA
+			tag = BEL
+		}
+		6 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_german
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			6 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_german
+			}
+			reset_province_name = 516
+			reset_province_name = 13068
+		}
+	}
+}
+
+# German - rename Vlandeeren
+country_event = {
+	id = rename.601
+	immediate = {log = "[GetDateText]: [Root.GetName]: event rename.601"}
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = GER
+			tag = RKB
+			is_subject_of = GER
+		}
+		6 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_german }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			6 = {
+				set_state_name = "Vlaanderen"
+				set_state_flag = renamed_state_german
+			}
+			set_province_name = { id = 516 name = "Brüssel"}
+			set_province_name = { id = 13068 name = "Löwen"}
 		}
 	}
 }

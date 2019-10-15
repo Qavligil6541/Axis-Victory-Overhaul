@@ -1,4 +1,4 @@
-﻿capital = 9
+﻿capital = 6
 
 #oob = ""
 
@@ -41,16 +41,15 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 0
-	fascism = 100
-	communism = 0
+	democratic = 32
+	fascism = 68
 	neutrality = 0
 }
 
 create_country_leader = {
-	name = "Reinhard Heydrich"
+	name = "Alexander von Falkenhausen"
 	desc = ""
-	picture = "gfx/leaders/PBM/Portrait_Bohmen_Heydrich.dds"
+	picture = "gfx/leaders/GER/portrait_chi_alexander_von_falkenhausen.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {

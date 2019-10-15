@@ -1,4 +1,4 @@
-﻿capital = 9
+﻿capital = 7
 
 #oob = ""
 
@@ -41,16 +41,15 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 0
-	fascism = 100
-	communism = 0
+	democratic = 32
+	fascism = 68
 	neutrality = 0
 }
 
 create_country_leader = {
-	name = "Reinhard Heydrich"
+	name = "Arthur Seyss-Inquart"
 	desc = ""
-	picture = "gfx/leaders/PBM/Portrait_Bohmen_Heydrich.dds"
+	picture = "gfx/leaders/GER/.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {

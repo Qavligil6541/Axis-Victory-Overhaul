@@ -152,5 +152,29 @@ on_actions = {
 			            country_event = { id = rename.9400 }
 			            country_event = { id = rename.9401 }
             }
+			# Alsace-Lorraine
+            if = {
+	            limit = { FROM.FROM = { state = 28 } }
+			            country_event = { id = rename.2800 }
+			            country_event = { id = rename.2801 }
+            }
+			# Wallonie
+            if = {
+	            limit = { FROM.FROM = { state = 34 } }
+			            country_event = { id = rename.3400 }
+			            country_event = { id = rename.3401 }
+            }
+			# Calais
+            if = {
+	            limit = { FROM.FROM = { state = 29 } }
+			            country_event = { id = rename.2900 }
+			            country_event = { id = rename.2901 }
+            }
+			# Vlaanderen
+            if = {
+	            limit = { FROM.FROM = { state = 6 } }
+			            country_event = { id = rename.600 }
+			            country_event = { id = rename.601 }
+            }
       }
 }
