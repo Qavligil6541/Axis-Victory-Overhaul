@@ -1,4 +1,4 @@
-﻿capital = 88
+﻿capital = 12
 
 #oob = ""
 
@@ -47,9 +47,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Hans Frank"
+	name = "Hinrich Lohse"
 	desc = ""
-	picture = "gfx/leaders/GER/Portrait_Hans_Frank.dds"
+	picture = "gfx/leaders/GER/Portrait_Hinrich_Lohse.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
