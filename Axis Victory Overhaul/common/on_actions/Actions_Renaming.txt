@@ -176,5 +176,126 @@ on_actions = {
 			            country_event = { id = rename.600 }
 			            country_event = { id = rename.601 }
             }
+			# Stajerska
+            if = {
+	            limit = { FROM.FROM = { state = 102 } }
+			            country_event = { id = rename.10200 }
+			            country_event = { id = rename.10201 }
+            }
+			# Ljubljana - German
+            if = {
+	            limit = { FROM.FROM = { state = 810 } }
+			            country_event = { id = rename.81000 }
+			            country_event = { id = rename.81001 }
+            }
+			# Ljubljana - Italian
+            if = {
+	            limit = { FROM.FROM = { state = 810 } }
+			            country_event = { id = rename.81002 }
+			            country_event = { id = rename.81003 }
+            }
+			# Rijeka - German
+            if = {
+	            limit = { FROM.FROM = { state = 812 } }
+			            country_event = { id = rename.81200 }
+			            country_event = { id = rename.81201 }
+            }
+			# Rijeka - Italian
+            if = {
+	            limit = { FROM.FROM = { state = 812 } }
+			            country_event = { id = rename.81202 }
+			            country_event = { id = rename.81203 }
+            }
+			# Murska Sobota - German
+            if = {
+	            limit = { FROM.FROM = { state = 811 } }
+			            country_event = { id = rename.81100 }
+			            country_event = { id = rename.81101 }
+            }
+			# Murska Sobota - Italian
+            if = {
+	            limit = { FROM.FROM = { state = 811 } }
+			            country_event = { id = rename.81102 }
+			            country_event = { id = rename.81103 }
+            }
+			# Kosice
+            if = {
+	            limit = { FROM.FROM = { state = 664 } }
+			            country_event = { id = rename.66400 }
+			            country_event = { id = rename.66401 }
+            }
+			# Vojvodina
+            if = {
+	            limit = { FROM.FROM = { state = 45 } }
+			            country_event = { id = rename.4500 }
+			            country_event = { id = rename.4501 }
+            }
+			# Westbanat - Hungarian
+            if = {
+	            limit = { FROM.FROM = { state = 764 } }
+			            country_event = { id = rename.76400 }
+			            country_event = { id = rename.76401 }
+            }
+			# Westbanat - Romanian
+            if = {
+	            limit = { FROM.FROM = { state = 764 } }
+			            country_event = { id = rename.76402 }
+			            country_event = { id = rename.76403 }
+            }
+			# Bratislava
+            if = {
+	            limit = { FROM.FROM = { state = 70 } }
+			            country_event = { id = rename.7000 }
+			            country_event = { id = rename.7001 }
+            }
+			# Presov
+            if = {
+	            limit = { FROM.FROM = { state = 71 } }
+			            country_event = { id = rename.7100 }
+			            country_event = { id = rename.7101 }
+            }
+			# Podkarpatska
+            if = {
+	            limit = { FROM.FROM = { state = 73 } }
+			            country_event = { id = rename.7300 }
+			            country_event = { id = rename.7301 }
+            }
+			# Banat
+            if = {
+	            limit = { FROM.FROM = { state = 82 } }
+			            country_event = { id = rename.8200 }
+			            country_event = { id = rename.8201 }
+            }
+			# Crisana
+            if = {
+	            limit = { FROM.FROM = { state = 83 } }
+			            country_event = { id = rename.8300 }
+			            country_event = { id = rename.8301 }
+            }
+			# Transilvania
+            if = {
+	            limit = { FROM.FROM = { state = 84 } }
+			            country_event = { id = rename.8400 }
+			            country_event = { id = rename.8401 }
+            }
+			# Nord Transilvania
+            if = {
+	            limit = { FROM.FROM = { state = 76 } }
+			            country_event = { id = rename.7600 }
+			            country_event = { id = rename.7601 }
+            }
+			# Secuimea
+            if = {
+	            limit = { FROM.FROM = { state = 821 } }
+			            country_event = { id = rename.82100 }
+			            country_event = { id = rename.82101 }
+            }
+			# Burgenland
+            if = {
+	            limit = { FROM.FROM = { state = 807 } }
+			            country_event = { id = rename.80700 }
+			            country_event = { id = rename.80701 }
+            }
+			
       }
 }
