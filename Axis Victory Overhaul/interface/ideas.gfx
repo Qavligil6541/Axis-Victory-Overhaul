@@ -4002,9 +4002,15 @@ spriteTypes = {
 		name = "GFX_idea_MTG_naval_treaty_adherent_reduced"
 		texturefile = "gfx/interface/ideas/idea_mtg_naval_treaty_adherent_reduced.dds"
 	}
-	spriteType = {
+	
+   ###CUSTOM ROMANIAN IDEAS#####
+   spriteType = {
 		name = "GFX_idea_selective_education"
 		texturefile = "gfx/interface/ideas/selective_education.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_ROM_army_corruption"
+		texturefile = "gfx/interface/ideas/rom_army_corruption.dds"
+	}
+   ####OTHER IDEAS##############	
 }
