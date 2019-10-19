@@ -2344,3 +2344,11 @@
  GER_german_rule_desc:0 "We cannot trust the natives of our conquered territories. We must bring in Germans to rule over these Reichskommissariats."
  GER_local_rule:0 "Local Rule"
  GER_local_rule_desc:0 "The locals can be trusted to watch over their own lands. This will also be more stable in the long run."
+ ###############################
+ ##########ROMANIAN STUFF#######
+ ##########NEW AND IMPROVED#####
+ ###############################
+ ROM_empower_the_iron_guard:1 "Empower the Iron Guard"
+ ROM_empower_the_iron_guard_desc:1 "The nationalist Iron Guard has won the hearts of many of the Romanian folk, thus, it would be best if we let them rule the nation."
+ ROM_iron_guard_constitution:0 "Constitution of Iron"
+ ROM_iron_guard_constitution_desc:0 "A new constitution will be adopted for the goverment, that will focus more on the militaristic side of the country."

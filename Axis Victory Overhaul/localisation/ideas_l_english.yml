@@ -2600,3 +2600,9 @@
  GER_allgemeine_2:0 "Allgemeine-SS"
  GER_allgemeine_3:0 "Allgemeine-SS"
  GER_SS_youth:0 "SS Youth"
+ ###CUSTOM ROMANIAN IDEAS####
+ ROM_army_corruption:0 "Army Corruption"
+ ROM_army_corruption_desc:0 "Due to our chaotic policy during the XXth century our army is quite corrupt and slow to adapt to new ideas of warfare."
+ ROM_nationalise_buisness:0 "Nationalise Nationalise businesses"
+ ROM_nationalise_buisness_desc:0 "If we are truly to succed in this world, we must take the work that has already been done and put it to good use, so we may develop it further."
+ ####OTHER IDEAS######
