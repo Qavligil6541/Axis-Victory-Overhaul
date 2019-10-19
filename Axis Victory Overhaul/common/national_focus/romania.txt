@@ -1,0 +1,317 @@
+focus_tree = {
+	id = romanian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ROM
+			#always = no
+			has_dlc = "Death or Dishonor"
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+
+#	focus = {
+#		id = ROM_
+#		icon = GFX_
+#		
+#		x = -3
+#		y = 0
+#		
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+	focus = {
+		id = ROM_institute_royal_dictatorship
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 15
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			is_subject = no
+			communism < 0.5
+			fascism < 0.5
+			democratic < 0.5
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+			create_country_leader = {
+				name = "Carol II"
+				desc = "POLITICS_CAROL_II_DESC"
+				picture = GFX_Portrait_romania_Carol_II				
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+					hedonist
+				}
+				id = 550
+			}
+			remove_ideas = neutrality_idea
+		}
+	}
+	focus = {
+		id = ROM_revise_the_constitution
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = ROM_institute_royal_dictatorship }
+		x = 0
+		y = 1
+		relative_position_id = ROM_institute_royal_dictatorship
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = ROM_carol_not_leader_trigger
+				NOT = { has_country_leader = { id = 550 } }
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			add_country_leader_trait = camarilla_leader
+			add_ideas = ROM_the_sentinel_of_the_motherland
+		}
+	}
+########IRON GUARD#############
+	focus = {
+		id = ROM_empower_the_iron_guard
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = ROM_revise_the_constitution }
+		x = 3
+		y = 4
+        relative_position_id =  ROM_institute_royal_dictatorship
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				popularity = 0.50
+				ideology = fascism
+			
+		}
+		custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ROM_mihail_sturdza
+			add_stability = -0.05
+			add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = GER }
+			GER = { add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = ROOT } }
+			
+			#Cancel guarantees
+			diplomatic_relation = {
+				country = YUG
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = CZE
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = GRE
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = TUR
+				relation = guarantee
+				active = no
+			}
+		}
+	}
+	focus = {
+		id = ROM_iron_guard_constitution
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = ROM_empower_the_iron_guard }
+		x = 0
+		y = 3
+		relative_position_id = ROM_empower_the_iron_guard
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = ROM_the_sentinel_of_the_motherland }
+				swap_ideas = {
+					add_idea = ROM_iron_guard
+					remove_idea = ROM_the_sentinel_of_the_motherland
+				}
+				else = {
+					remove_ideas = ROM_the_sentinel_of_the_motherland
+					add_ideas = ROM_iron_guard
+				}
+			}
+			#Remove ideas or display tooltip warning that it will happen
+			if = {
+				limit = {
+					has_idea = ROM_securitate
+				}
+				remove_ideas = ROM_securitate
+				else = {
+					if = {
+						limit = {
+							has_idea = ROM_constitutional_guarantees
+						}
+						remove_ideas = ROM_constitutional_guarantees
+						else = {
+							custom_effect_tooltip = ROM_appoint_german_friendly_government_tooltip
+						}
+					}
+				}
+			}
+		}
+		focus={
+		id = ROM_nationalize_business
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = ROM_iron_guard_constitution }
+		x = 0
+		y = 3
+        relative_position_id = ROM_iron_guard_constitution
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = ROM_nationalise_IC
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV } 
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ROM_nationalise_IC
+			}
+		}
+
+		}
+	
+	
+
+
+	###
