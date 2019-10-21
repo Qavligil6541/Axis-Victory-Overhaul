@@ -261,7 +261,6 @@ country_event = {
 		add_state_claim = 97
 		add_state_claim = 80
 		add_state_claim = 784
-		add_state_claim = 864
 		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } }
 		GER = {
 			country_event = { days = 1 id = germany.12 }
@@ -477,21 +476,6 @@ country_event = {
 				}
 			}
 			SOV = { transfer_state = 94 }
-		}
-		if = {
-			limit = {
-				864 = {
-					OR = {
-						is_controlled_by = GER
-						any_other_country = {
-							controls_state = 864
-							is_in_faction_with = GER
-							GER = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			SOV = { transfer_state = 864 }
 		}
 		if = {
 			limit = {
@@ -2304,41 +2288,6 @@ country_event = {
 	option = {
 		name = germany.55.b
 		add_political_power = -20
-		if = {
-			limit = {
-				9 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
-					}
-				}
-			}
-			PBM = { transfer_state = 9 }
-		}
-		if = {
-			limit = {
-				75 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
-					}
-				}
-			}
-			PBM = { transfer_state = 75 }
-		}
-		if = {
-			limit = {
-				855 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
-					}
-				}
-			}
-			PBM = { transfer_state = 855 }
-		}
-                855 = { set_demilitarized_zone = yes }
-                puppet = PBM
 		ai_chance = { 
 			factor = 10
 			modifier = {
@@ -3716,7 +3665,6 @@ country_event = {
 			POL = { transfer_state = 664 }
 		}
 		transfer_state = 85
-		transfer_state = 763
 		if = {
 			limit = {
 				ENG = {
@@ -4034,11 +3982,7 @@ country_event = {
 	option = {
 		name = germany.87.a
 		transfer_state = 85
-		transfer_state = 763
-                add_state_core = 85
-                add_state_core = 763
 		remove_state_claim = 86
-		remove_state_claim = 762
 		if = {
 			limit = {
 				ENG = {
@@ -4331,24 +4275,7 @@ country_event = {
 	
 	option = {
 		name = germany.94.a
-		ai_chance = { factor = 20 }
 		GER = { transfer_state = 102 }
-		GER = { transfer_state = 810 }
-		GER = { transfer_state = 811 }
-		GER = { transfer_state = 812 }
-		set_country_flag = slovenia_acquired
-		hidden_effect = {
-			news_event = { id = news.163 hours = 6 }
-		}
-	}
-
-	option = {
-		name = germany.94.b
-		ai_chance = { factor = 80 }
-		GER = { transfer_state = 102 }
-		ITA = { transfer_state = 810 }
-		HUN = { transfer_state = 811 }
-		ITA = { transfer_state = 812 }
 		set_country_flag = slovenia_acquired
 		hidden_effect = {
 			news_event = { id = news.163 hours = 6 }

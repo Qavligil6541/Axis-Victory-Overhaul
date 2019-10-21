@@ -62,7 +62,6 @@ if = {
 }
 add_ideas = neutrality_idea
 add_ideas = ROM_selective_education
-add_ideas = ROM_army_corruption
 
 #Kick off kings crazy life
 if = {
