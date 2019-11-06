@@ -47,9 +47,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Alexander von Falkenhausen"
+	name = "Josef Grohe"
 	desc = ""
-	picture = "gfx/leaders/GER/portrait_chi_alexander_von_falkenhausen.dds"
+	picture = "gfx/leaders/GER/Portrait_Josef_Grohe.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {

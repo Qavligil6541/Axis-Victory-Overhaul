@@ -130,11 +130,12 @@ focus_tree = {
 		icon = GFX_focus_generic_coastal_fort
 		prerequisite = { focus = GER_west_wall }
 		available = {
-			OR = {
-				FRA = { has_capitulated = yes }
-				NOT = { country_exists = FRA }
-			}
-			OR = {
+			any_country = {
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+			 OR = {
 				has_full_control_of_state = 19
 				has_full_control_of_state = 23
 				has_full_control_of_state = 30
@@ -144,12 +145,13 @@ focus_tree = {
 				has_full_control_of_state = 6
 				has_full_control_of_state = 7
 				has_full_control_of_state = 36
-				has_full_control_of_state = 99
 				has_full_control_of_state = 110
 				has_full_control_of_state = 142
 				has_full_control_of_state = 143
 				has_full_control_of_state = 144
 				has_full_control_of_state = 785
+				has_full_control_of_state = 99
+			 }
 			}
 		}
 		cancel_if_invalid = yes
@@ -4498,9 +4500,6 @@ focus_tree = {
 				}
 				transfer_state = 28
 			}
-			28 = { set_state_name = "Elsass-Lothringen" }
-			set_province_name = { id = 9503 name = "Strassburg" }
-			set_province_name = { id = 678 name = "Mulhausen" }
 			FRA = {
 				country_event = { id = wtt_germany.63 }
 			}
@@ -5750,9 +5749,10 @@ focus_tree = {
 		id = GER_oppose_hitler
 		icon = GFX_focus_ger_oppose_hitler
 		mutually_exclusive = { focus = GER_rhineland }
+		
 
 		allow_branch = {
-			has_dlc = "Waking the Tiger"
+		   has_government = neutrality
 		}
 
 		available = {

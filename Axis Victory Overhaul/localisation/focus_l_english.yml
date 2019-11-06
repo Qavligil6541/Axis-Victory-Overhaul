@@ -518,6 +518,8 @@
  ITA_prospect_for_oil_desc:0 "Old empires always fear new ones on the rise and we should not depend on them. We cannot rely on oil from other nations and should focus our efforts on finding our own source within the empire. This is how we make sure to stay competitive far into the future."
  ITA_greece_war_goal:0 "War with Greece"
  ITA_greece_war_goal_desc:0 "What kind of Roman Empire are we restoring if we do not include Greece? It should be an easy target..."
+ ITA_yugo_war:0 "War with Yugoslavia"
+ ITA_yugo_war_desc:0 "Yugoslavia is standing in the way of Italy's greatness. They must be eliminated."
  ITA_greece_friend:0 "Befriend Greece"
  ITA_greece_friend_desc:0 "The Greeks are a fellow ancient people and the cradle of Western civilization. It should not be impossible to align their aims with ours..."
  ITA_turkey_friend:0 "Befriend Turkey"
